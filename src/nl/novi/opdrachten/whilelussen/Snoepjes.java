@@ -1,18 +1,23 @@
+// done
+
 package nl.novi.opdrachten.whilelussen;
 
 public class Snoepjes {
 
-    public static void main (String[] snoepjes) {
+    public static void main(String[] snoepjes) {
         int aantalSnoepjes = 22;
 
         // Deze code is uitgecommentarieerd, omdat de code niet compileert zonder dat er aanpassingen plaatsvinden.
 
-        /*while() { // Voeg hier de conditionele statement toe tussen de haakjes.
-            System.out.println("Er zijn nog " + aantalSnoepjes + " snoepjes over. Tijd om er nog een op te eten.");
-
+        while (aantalSnoepjes > 0) { // Voeg hier de conditionele statement toe tussen de haakjes.
+            if (aantalSnoepjes == 1) {
+                System.out.println("Er is nog " + aantalSnoepjes + " snoepje over. Tijd om de laatste op te eten.");
+            } else {
+                System.out.println("Er zijn nog " + aantalSnoepjes + " snoepjes over. Tijd om er nog een op te eten.");
+            }
             // Zorg er hier voor dat het aantal snoepjes minder wordt.
-
-        }*/
+            aantalSnoepjes --;
+        }
         System.out.println("De snoepjes zijn op.");
     }
 }

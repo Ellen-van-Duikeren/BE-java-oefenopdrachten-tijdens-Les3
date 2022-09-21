@@ -1,4 +1,8 @@
+// done
+
 package nl.novi.opdrachten.methodes;
+
+import java.util.Scanner;
 
 /**
  * Schrijf een methode die een Integer ontvangt.
@@ -10,6 +14,17 @@ package nl.novi.opdrachten.methodes;
 public class DeelbaarDoorVijf {
 
     public static void main(String[] sammieKijkOmhoog) {
-        int chosenNumber = 44;
+        int chosenNumber = 50;
+        moduloFive(chosenNumber);
     }
+
+    //    methods ------------------------------------------------------------------------------------------------
+    public static void moduloFive(int numberByFive) {
+        if (numberByFive % 5 == 0) {
+            System.out.println("deelbaar door vijf");
+        } else {
+            System.out.println("ondeelbaar door vijf");
+        }
+    }
+
 }

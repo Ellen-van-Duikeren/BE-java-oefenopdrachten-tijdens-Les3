@@ -1,3 +1,5 @@
+//done
+
 package nl.novi.opdrachten.beslissingsstructuren;
 
 import java.util.Scanner;
@@ -6,8 +8,8 @@ public class Geslacht {
     public static void main(String[] args) {
         Scanner userInputScanner = new Scanner(System.in);
 
-        System.out.println("Wat is uw geslacht?");
-        String geslacht = userInputScanner.nextLine();
+        System.out.println("Wat is uw geslacht? Vul in: man / vrouw / anders");
+        String geslacht = userInputScanner.nextLine().toLowerCase();
 
         /*
         Hier boven heeft de gebruiker zijn geslacht ingevoerd. Print met behulp van een beslissingsstructuur (if/else)
@@ -19,6 +21,12 @@ public class Geslacht {
         Bonus: Lukt het je om de code zo te maken dat hoofdletters genegeerd worden?
          */
 
+        if (geslacht.equals("man")) {
+            System.out.println("Dag meneer.");
+        } else if (geslacht.equals("vrouw")) {
+            System.out.println("Dag mevrouw.");
+        } else {
+            System.out.println("Dag persoon.");
+        }
     }
-
 }
