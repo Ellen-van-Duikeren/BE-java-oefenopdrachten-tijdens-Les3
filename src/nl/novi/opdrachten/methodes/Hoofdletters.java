@@ -61,7 +61,7 @@ public class Hoofdletters {
                     case "van":
                         break;
                     case "el":
-                        names[i] = names[i] + "-";  // liggend streepje "-" weer toevoegen die ik in de split heb weggehaald
+                        names[i] = names[i] + "-";  //  liggend streepje "-" weer toevoegen die ik in de split heb weggehaald
                         break;
                     default:
                         names[i] = names[i].substring(0, 1).toUpperCase() + names[i].substring(1); // capitalize eerste letter van elke naam
